@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Using `x-amp-html` MIME Type to send dynamic AMP emails using Amazon SES.
+# Using `x-amp-html` MIME type to send dynamic AMP emails using Amazon SES.
 # Refer: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-raw.html
 import os
 import boto3
@@ -17,9 +17,8 @@ SENDER = "Sender Name <sender@yourdomain.com>"
 # is still in the sandbox, this address must be verified.
 RECIPIENT = "recipient@example.com"
 
-# Specify a configuration set. If you do not want to use a configuration
-# set, comment the following variable, and the
-# `ConfigurationSetName=CONFIGURATION_SET` argument below.
+# You may specify a configuration set, if needed,
+# and use it with the `ConfigurationSetName=CONFIGURATION_SET` argument below.
 # CONFIGURATION_SET = "ConfigSet"
 
 # If necessary, replace us-west-2 with the AWS Region you're using for Amazon SES.
